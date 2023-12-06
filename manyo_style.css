@@ -1,0 +1,617 @@
+/*폰트*/
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2');
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2');
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2');
+    font-display: swap;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'GmarketSans', sans-serif;
+    letter-spacing: -0.8px;
+    color: #000;
+}
+
+body {
+    background-color: #919191;
+}
+#all {
+    background-color: #fff;
+    width: 85vw;
+    height: 85vh;
+    margin: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #000;
+    box-shadow: 15px 15px;
+}
+
+header {
+    display: flex;
+    border-bottom: 3px solid #000;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header h1 {
+    margin: auto 0;
+    font-size: 0px;
+    margin-left: 65px;
+    width: 180px;
+    height: 47px;
+    background-image: url(img/ma_nyo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+header nav ul {
+    display: flex;
+    margin-left: 25.8vw;
+}
+header nav ul li {
+    margin: 0 30px;
+    font-size: 30px;
+}
+header nav ul li button {
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+}
+header nav ul li .line {
+    display: block;
+    border-bottom: 2px solid #b2b2b2;
+    width: 0%;
+    margin: 0 auto;
+    transition: ease all 0.3s;
+}
+
+header #menu_bt {
+    border-left: 3px solid #000;
+    width: 180px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+header #menu_bt a {
+    display: block;
+    height: 40px;
+    width: 46px;
+    font-size: 0;
+    background-image: url(img/menu.png);
+}
+
+header aside {
+    border-left: 3px solid #000;
+    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 84.4vh;
+    background-color: #fff;
+    z-index: 1000;
+}
+header aside button {
+    width: 100%;
+    height: 46px;
+    background-color: transparent;
+    font-size: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+header aside #pg_bt_up {
+    background-image: url(img/up.png);
+    margin-top: 30px;
+}
+header aside #pg_bt_down {
+    background-image: url(img/down.png);
+    margin-bottom: 30px;
+    bottom: 0;
+    position: relative;
+    position: absolute;
+}
+header aside #pg_paging {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -73%);
+}
+header aside #pg_paging span {
+    font-size: 0;
+    background-color: #b2b2b2;
+    width: 5px;
+    height: 100px;
+    margin: 7px auto;
+    display: block;
+}
+header aside #pg_paging .onPage {
+    background-color: #000;
+}
+
+main {
+    height: 663px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#fro {
+    height: 663px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* display: none; */
+}
+#fro #fro_txt {
+    margin-left: 8vw;
+}
+#fro #fro_txt h3 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+#fro #fro_txt h2 {
+    font-size: 0px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 130px;
+    background-image: url(img/skin_wizard.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#fro #fro_txt p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 38px
+}
+#fro #fro_txt button {
+    display: inline-block;
+    font-size: 37px;
+    border: 3px solid #000;
+    padding: 5px 15px;
+    padding-top: 10px;
+    letter-spacing: -1px;
+    box-shadow: 6px 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#fro #fro_slide {
+    right: 0;
+    position: relative;
+    position: absolute;
+    z-index: 100;
+    width: 36vw;
+    overflow: hidden;
+}
+#fro #fro_slide ul {
+    display: flex;
+    align-items: center;
+}
+
+#fro #fro_slide ul li {
+    width: 450px;
+}
+#fro #fro_slide ul li a {
+    border: 3px solid #000;
+    width: 370px;
+    height: 506px;
+    margin-right: 80px;
+    box-shadow: 8px 8px;
+    display: block;
+}
+#fro #fro_slide ul li img {
+    width: 364px;
+    margin-bottom: 25px;
+}
+#fro #fro_slide ul li p {
+    margin: 0 36px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+#fro #fro_slide ul li h3 {
+    margin: 0 36px;
+    font-size: 34px;
+    font-weight: 500;
+    word-break: keep-all;
+    white-space: pre-line;
+}
+#fro #fro_slide ul li:nth-child(5) h3 {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+#fro #fro_slide #fro_slide_pg_bt {
+    display: flex;
+}
+#fro #fro_slide #fro_slide_pg {
+    display: flex;
+    gap: 5px;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+#fro #fro_slide #fro_slide_pg span {
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    font-size: 0;
+}
+#fro #fro_slide #fro_slide_pg .onPageF {
+    background-color: #000;
+}
+
+#stop_play_btn {
+    margin-left: 10px;
+    margin-top: 27px;
+    text-indent: -9999px;
+    width: 15px;
+    height: 14px;
+    background-image: url(img/pause.svg);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#stop_play_btn.onPB {
+    background-image: url(img/play.svg);
+}
+
+
+#uni {
+    width: 97%;
+    height: 663px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#uni #uni_paging {
+    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    gap: 32vw;
+    z-index: 100;
+}
+#uni #uni_paging #uni_bt_pre, #uni_bt_next {
+    width: 90px;
+    height: 100px;
+    border: 3px solid #000;
+    box-shadow: 5px 5px;
+    font-size: 0;
+    cursor: pointer;
+}
+#uni #uni_paging #uni_bt_pre {
+    background: url(img/pre.png), linear-gradient(-120deg, #fff, #ccc);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#uni #uni_paging #uni_bt_next{
+    background: url(img/next.png), linear-gradient(60deg, #fff, #ccc);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#uni #uni_paging #uni_pg {
+    display: flex;
+    gap: 5px;
+    transform: translateY(28vh);
+}
+#uni #uni_paging span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    font-size: 0;
+}
+#uni #uni_paging #uni_pg .onPageU {
+    background-color: #000;
+}
+
+
+#uni #uni_content {
+    display: flex;
+    align-items: center;
+    width: 400%;
+    height: 663px;
+    margin-top: -50px;
+}
+
+#uni>div article {
+    text-align: center;
+    width: 1585px;
+}
+
+#uni>div article h2 {
+    font-size: 46px;
+    word-break: keep-all;
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+#uni>div article h2+p {
+    font-size: 27px;
+    font-weight: 300;
+    word-break: keep-all;
+    white-space: nowrap;
+    line-height: 150%;
+}
+#uni>div article p strong, #uni>div article h2 {
+    font-weight: 500;
+}
+
+#uni>div #uni1_txt {
+    text-align: left;
+    z-index: 200;
+    padding-left: 16vw;
+    margin-top: 25px;
+}
+#uni>div #uni1_img {
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+#uni>div #uni1_img {
+    height: 228px;
+    margin-top: 55px;
+}
+#uni>div #uni1_img img:nth-child(3) {
+    height: 461px;
+    margin-top: -233px;
+}
+
+#uni>div #uni2_txt {
+    text-align: left;
+    z-index: 200;
+    padding-left: 15vw;
+    margin-top: 25px;
+}
+#uni>div #uni2_img {
+    display: flex;
+    z-index: 100;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+#uni>div #uni2_img img {
+    height: 260px;
+    margin-top: 55px;
+}
+
+#uni>div #uni3_txt {
+    text-align: left;
+    z-index: 200;
+    padding-left: 18vw;
+    margin-top: 25px;
+}
+#uni>div article #uni3_txt h2 {
+    font-size: 46px;
+    word-break: keep-all;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    color: #4fa04b;
+}
+#uni>div article #uni3_txt h2 strong {
+    font-weight: 700;
+    color: #000;
+}
+#uni>div #uni3_img img {
+    height: 270px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+#cha_list {
+    width: 97%;
+    height: 663px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: relative;
+    overflow-y: scroll;
+}
+#cha #cha_details {
+    width: 100%;
+}
+
+#cha #cha_details>li {
+    display: flex;
+    width: 100%;
+    height: 663px;
+    padding: 0 160px;
+    align-items: center;
+}
+
+.cha_left {
+    position: relative;
+}
+.cha_left li {
+    border: 3px solid #000;
+    width: 370px;
+    height: 506px;
+    margin-right: 80px;
+    box-shadow: 8px 8px;
+    z-index: 100;
+    position: relative;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    filter: opacity(0%);
+    display: block;
+}
+.cha_left li:nth-child(1) {
+    filter: opacity(100%);
+}
+.cha_left li img {
+    width: 364px;
+    margin-bottom: 25px;
+}
+.cha_left li p {
+    margin: 0 36px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.cha_left li h3 {
+    margin: 0 36px;
+    font-size: 34px;
+    font-weight: 500;
+    word-break: keep-all;
+    white-space: pre-line;
+}
+.product {
+    display: block;
+    width: 364px;
+    height: 300px;
+    position: relative;
+    position: absolute;
+    font-size: 0;
+    margin-top: 185px;
+    z-index: 1;
+}
+
+
+.cha_left li .cha_left_cha {
+    background-image: url(img/frame.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 364px;
+    height: 504px;
+    border: 1px solid transparent;
+    z-index: 100;
+    position: relative;
+    margin-top: -2px;
+}
+
+.cha_left li .cha_left_cha p {
+    margin: 42px 36px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.cha_left li .cha_left_cha .cololcord2 {
+    margin: 10px 36px;
+    padding-top: 20px;
+}
+
+.cha_left li .cha_left_cha h4 {
+    margin: 10px 36px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.cha_right {
+    width: 50%;
+    right: 0;
+    position: relative;
+    position: absolute;
+    margin-right: 160px;
+}
+.cha_right h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.cha_right h3 {
+    margin: 18px 0 23px;
+    font-size: 31px;
+    font-weight: 500;
+}
+.cha_right p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 38px;
+    word-break: keep-all;
+}
+
+.cha_right .cha_right_product {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+    position: relative;
+    align-items: center;
+    gap: 50px;
+}
+.cha_right .cha_right_product li {
+    text-align: center;
+    position: relative;
+}
+.cha_right .cha_right_product p {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 185px;
+    white-space : nowrap; 
+    transform: translateX(-50%);
+    filter: opacity(0%);
+    display: block;
+    transition: 0.3s ease all ;
+}
+#product_bt2+p, #product_bt3+p, #product_bt13+p, #product_bt17+p, #product_bt23+p, #product_bt24+p {
+    top: 145px;
+}
+.cha_right .product_bt {
+}
+
+#product_bt1, #product_bt4, #product_bt5, #product_bt6, #product_bt7, #product_bt8, #product_bt9, #product_bt10, #product_bt11, #product_bt12, #product_bt14, #product_bt15, #product_bt16, #product_bt18, #product_bt19, #product_bt20, #product_bt21, #product_bt22, #product_bt25 {
+    height: 176px;
+}
+#product_bt2, #product_bt3, #product_bt13, #product_bt17, #product_bt23, #product_bt24 {
+    height: 95px;
+}
+
+.cha_right .product_bt img {
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: brightness(70%);
+}
+

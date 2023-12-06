@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="manyo_style.css" rel="stylesheet" type="text/css">
+    <title>ma:nyo</title>
+</head>
+<body>
+<div id="all">
+<header>
+    <h1>ma:nyo</h1>
+    <nav>
+        <ul>
+            <li>
+                <button class="pageButton" data-page="0">메인 페이지</button>
+                <div class="line"></div>
+            </li>
+            <li>
+                <button class="pageButton" data-page="1">ABOUT US</button>
+                <div class="line"></div>
+            </li>
+            <li>
+                <button class="pageButton" data-page="2">라인 소개</button>
+                <div class="line"></div>
+            </li>
+        </ul>
+    </nav>
+    <div id="menu_bt">
+        <a href="">menu</a>
+    </div>
+    <aside>
+        <button id="pg_bt_up">위로</button>
+        <div id="pg_paging">
+            <span class="onPage">mane pg</span>
+            <span>about us</span>
+            <span>line</span>
+        </div>
+        <button id="pg_bt_down">아래로</button>
+    </aside>
+</header>
+
+<main>
+<div id="mainsd">
+    <section id="fro">
+        <article id="fro_txt">
+            <h3>as you wish,</h3>
+            <h2>skin wizard</h2>
+            <p>당신이 원하는 대로, 마법 같은 피부 변화를 만드는 곳<br>이곳은 피부에 진심인 위저드들의 마녀공장입니다.</p>
+            <button class="pageButton" data-page="1">브랜드 스토리</button>
+        </article>
+
+        <article id="fro_slide">
+            <ul>
+                <li>
+                <a href="#cha_details_1">
+                    <img src="img/main_pc.PNG" alt="누워있는 노란색 화장품 병의 입구에서 스킨이 흘러나오는 사진">
+                    <p>Pure Cleansing</p>
+                    <h3>퓨어 클렌징</h3>
+                </a>
+                </li>
+                <li>
+                <a href="#cha_details_2">
+                    <img src="img/main_bab.png" alt="거품 속에 있는 투명 분홍색 화장품 병의 사진">
+                    <p>Banilla Boutique</p>
+                    <h3>바닐라 부티크</h3>
+                </a>
+                </li>
+                <li>
+                <a href="#cha_details_3">
+                    <img src="img/main_ov.png" alt="아워 비건 라인의 클랜징, 마스크팩, 크림, 스킨 등의 사진">
+                    <p>Our Vegan</p>
+                    <h3>아워 비건</h3>
+                </a>
+                </li>
+                <li>
+                <a href="#cha_details_4">
+                    <img src="img/main_tw.png" alt="떼르말 워터 라인의 스킨 로션이 물 속에 있는 듯한 컨셉 사진">
+                    <p>Thermal Water</p>
+                    <h3>떼르말 워터</h3>
+                </a>
+                </li>
+                <li>
+                <a href="#cha_details_5">
+                    <img src="img/main_bb.png" alt="비피다 바이옴 라인의 스킨을 건네받는 손의 사진">
+                    <p>Bifida Biome</p>
+                    <h3>비피다 바이옴</h3>
+                </a>
+                </li>
+            </ul>
+            <div id="fro_slide_pg_bt">
+                <div id="fro_slide_pg">
+                    <span class="onPageF">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                </div>
+                <button id="stop_play_btn">Stop Slide</button>
+            </div>
+        </article>
+    </section>
+
+
+    <section id="uni">
+        <div id="uni_paging">
+            <button id="uni_bt_pre">이전</button>
+            <div id="uni_pg">
+                <span class="onPageU">uni_pg1</span>
+                <span>uni_pg2</span>
+                <span>uni_pg3</span>
+            </div>
+            <button id="uni_bt_next">다음</button>
+        </div>
+        
+        <div id="uni_content">
+            <article id="uni1">
+                <div id="uni1_txt">
+                    <h2>as you wish, <strong>skin wizard</strong></h2>
+                    <p>마녀공장의 모든 것에는 고객이 원하는 피부를 <br>
+                        실현하기 위한 피부를 향한 진심이 담겨 있습니다.</p>
+                </div>
+                <div id="uni1_img">
+                    <img src="img/ab1_1.PNG">
+                    <img src="img/ab1_2.PNG">
+                    <img src="img/ab1_3.PNG">
+                </div>
+                </article>
+
+            <article id="uni2">
+                <div id="uni2_txt">
+                    <h2>we do <strong>wonders</strong></h2>
+                    <p>마녀공장은 섬세한 차이가 경이로움을 만들어 낸다는 믿음으로,<br>
+                        제품 하나하나에 마녀공장만의 까다로운 성분 원칙을 적용합니다.</p>
+                </div>
+                <div id="uni2_img">
+                    <img src="img/ab2_1.PNG">
+                    <img src="img/ab2_2.PNG">
+                    <img src="img/ab2_3.PNG">
+                </div>
+            </article>
+
+            <article id="uni3">
+                <div id="uni3_txt">
+                    <h2>green <strong>re:magic</strong></h2>
+                    <p>지구를 생각한 eco-packaging 시스템을 적극적으로 실시합니다.<br>
+                        이러한 노력들은 우리를 살아갈 수 있게 하는 자연과 지구에 경의를 표하는<br>
+                        마녀공장의 마음입니다.</p>
+                </div>
+                <div id="uni3_img">
+                    <img src="img/ab3.png">
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="cha">
+        <article id="cha_list">
+            <ul id="cha_details">
+                <li id="cha_details_1">
+                    <ul class="cha_left">
+                        <li>
+                            <img src="img/main_pc.PNG" alt="누워있는 노란색 화장품 병의 입구에서 스킨이 흘러나오는 사진">
+                            <p>Pure Cleansing</p>
+                            <h3>퓨어 클렌징</h3>
+                        </li>
+                        <li>
+                            <div class="product" id="product1">#f7e400</div>
+                            <div class="cha_left_cha">
+                                <p>Pure Cleansing</p>
+                                <h3>퓨어 클랜징 오일</h3>
+                                <h4>#f7e400</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product2">#ffdc79</div>
+                            <div class="cha_left_cha">
+                                <p>Pure Cleansing</p>
+                                <h3>딥 클리어 클랜징 밤</h3>
+                                <h4>#ffdc79</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product3">#e69b01</div>
+                            <div class="cha_left_cha">
+                                <p>Pure Cleansing</p>
+                                <h3>블랙헤드 퓨어 클렌징 오일 킬패드</h3>
+                                <h4>#e69b01</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product4">#f4f4f4</div>
+                            <div class="cha_left_cha">
+                                <p>Pure Cleansing</p>
+                                <h3>퓨어 클랜징 워터</h3>
+                                <h4>#f4f4f4</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product5">#fff479</div>
+                            <div class="cha_left_cha">
+                                <p>Pure Cleansing</p>
+                                <h3>퓨어 클랜징 티슈</h3>
+                                <h4>#fff479</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product6">#fff7be</div>
+                            <div class="cha_left_cha">
+                                <p>Pure Cleansing</p>
+                                <h3>퓨어 아쿠라 필링 젤</h3>
+                                <h4>#fff7be</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cha_right">
+                        <h2>퓨어 클렌징</h2>
+                        <h3>1%의 오차도 없는 100% 만족 대행진</h3>
+                        <p>세안 후에도 균형잡힌 밸런스를 유지 시켜주는 pH약산성으로 지극 걱정 없이 <br>
+                            짙은 메이크업은 물론 까만 블랙헤드도 남김없이 순하게 잘 지우세요.<br>
+                            물에 닿는 순간 우윳빛으로 변하는 빠른 유화 과정으로 피부이 있는 노폐물을<br>
+                            사르르 녹여내고 세안 후에도 부드럽고 촉촉해요.  </p>
+                        <ul class="cha_right_product">
+                            <li>
+                                <div class="product_bt" id="product_bt1">
+                                    <img src="img/PC/pc_c1.PNG">
+                                </div>
+                                <p>퓨어 클랜징 오일</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt2">
+                                    <img src="img/PC/pc_c2.png">
+                                </div>
+                                <p>딥 클리어 클랜징 밤</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt3">
+                                    <img src="img/PC/pc_c3.png">
+                                </div>
+                                <p>블랙헤드 퓨어 클렌징 오일 킬패드</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt4">
+                                    <img src="img/PC/pc_c4.png">
+                                </div>
+                                <p>퓨어 클랜징 워터</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt5">
+                                    <img src="img/PC/pc_c5.png">
+                                </div>
+                                <p>퓨어 클랜징 티슈</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt6">
+                                    <img src="img/PC/pc_c6.png">
+                                </div>
+                                <p>퓨어 아쿠라 필링 젤</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="cha_details_2">
+                    <ul class="cha_left">
+                        <li>
+                            <img src="img/main_bab.png" alt="거품 속에 있는 투명 분홍색 화장품 병의 사진">
+                            <p>Banilla Boutique</p>
+                            <h3>바닐라 부티크</h3>
+                        </li>
+                        <li>
+                            <div class="product" id="product7">#dc5c76</div>
+                            <div class="cha_left_cha">
+                                <p>Banilla Boutique</p>
+                                <h3>바닐라 부티크 <br>허그 향수</h3>
+                                <h4>#dc5c76</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product8">#c08799</div>
+                            <div class="cha_left_cha">
+                                <p>Banilla Boutique</p>
+                                <h3>바닐라 부티크 <br>퍼퓸 핸드크림</h3>
+                                <h4>#c08799</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product9">#f4b9c2</div>
+                            <div class="cha_left_cha">
+                                <p>Banilla Boutique</p>
+                                <h3>바닐라 부티크 허그 퍼퓸 샴푸</h3>
+                                <h4>#f4b9c2</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product10">#e7e3e4</div>
+                            <div class="cha_left_cha">
+                                <p>Banilla Boutique</p>
+                                <h3>바닐라 부티크 허그 퍼퓸 바디로션</h3>
+                                <h4>#e7e3e4</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product11">#fab8b1</div>
+                            <div class="cha_left_cha">
+                                <p>Banilla Boutique</p>
+                                <h3>바닐라 부티크 허그 퍼퓸 바디워시</h3>
+                                <h4>#fab8b1</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cha_right">
+                        <h2>바닐라 부티크</h2>
+                        <h3>허그를 부르는 사랑스러운 향기 습관</h3>
+                        <p>백과사전처럼 두꺼운 우리의 추억에 지금 안고 있는 사랑의 향기를 책갈피처럼 끼워두세요. 따뜻한 봄의 시작을 알리는 라일락과 레몬버네나 향의 달콤한 노랫소리에 맞추어 오스만투스, 유럽작약의 향이 춤을 추고 피치와 월하미인꽃의 향이 싱그러움을 자아내는 포근하고 안아주고 싶은 봄의 향기</p>
+                        <ul class="cha_right_product">
+                            <li>
+                                <div class="product_bt" id="product_bt7">
+                                    <img src="img/BaB/bab_c1.png">
+                                </div>
+                                <p>허그 향수</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt8">
+                                    <img src="img/BaB/bab_c2.png">
+                                </div>
+                                <p>퍼퓸 핸드크림</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt9">
+                                    <img src="img/BaB/bab_c3.png">
+                                </div>
+                                <p>허그 퍼퓸 샴푸</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt10">
+                                    <img src="img/BaB/bab_c4.png">
+                                </div>
+                                <p>허그 퍼퓸 바디로션</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt11">
+                                    <img src="img/BaB/bab_c5.png">
+                                </div>
+                                <p>허그 퍼퓸 바디워시</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="cha_details_3">
+                    <ul class="cha_left">
+                        <li>
+                            <img src="img/main_ov.png" alt="아워 비건 라인의 클랜징, 마스크팩, 크림, 스킨 등의 사진">
+                            <p>Our Vegan</p>
+                            <h3>아워 비건</h3>
+                        </li>
+                        <li>
+                            <div class="product" id="product12">#eae7d0</div>
+                            <div class="cha_left_cha">
+                                <p>Our Vegan</p>
+                                <h3>어성초 시카 클렌징폼</h3>
+                                <h4>#eae7d0</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product13">#dfcfa6</div>
+                            <div class="cha_left_cha">
+                                <p>Our Vegan</p>
+                                <h3>아워 비건 립밤</h3>
+                                <h4>#dfcfa6</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product14">#f3f3f1</div>
+                            <div class="cha_left_cha">
+                                <p>Our Vegan</p>
+                                <h3>선크림 베이직</h3>
+                                <h4>#f3f3f1</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product15">#756e46</div>
+                            <div class="cha_left_cha">
+                                <p>Our Vegan</p>
+                                <h3>어성초 시카 토너</h3>
+                                <h4>#756e46</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product16">#cfcca0</div>
+                            <div class="cha_left_cha">
+                                <p>Our Vegan</p>
+                                <h3>어성초 98 시카 세럼</h3>
+                                <h4>#cfcca0</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product17">#a2924c</div>
+                            <div class="cha_left_cha">
+                                <p>Our Vegan</p>
+                                <h3>어성초 시카 크림</h3>
+                                <h4>#a2924c</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cha_right">
+                        <h2>아워 비건</h2>
+                        <h3>예민할수록 순하게, 깨끗한 진정의 힘</h3>
+                        <p>맑고 깨끗한 공기로 가득한 청정 지리산에서 144시간 정성 들여 발효시킨 어성초 추출물에 병풀이 선사하는 진정 에너지를 온전히 담아냈습니다. 예민해진 피부를 편안하고 촉촉하게 다스려주는 100% 비건 레시피의 아워 비건입니다.</p>
+                        <ul class="cha_right_product">
+                            <li>
+                                <div class="product_bt" id="product_bt12">
+                                    <img src="img/OV/ov_c1.png">
+                                </div>
+                                <p>어성초 시카 클렌징폼</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt13">
+                                    <img src="img/OV/ov_c2.png">
+                                </div>
+                                <p>아워 비건 립밤</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt14">
+                                    <img src="img/OV/ov_c3.png">
+                                </div>
+                                <p>선크림 베이직</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt15">
+                                    <img src="img/OV/ov_c4.png">
+                                </div>
+                                <p>어성초 시카 토너</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt16">
+                                    <img src="img/OV/ov_c5.png">
+                                </div>
+                                <p>어성초 98 시카 세럼</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt17">
+                                    <img src="img/OV/ov_c6.png">
+                                </div>
+                                <p>어성초 시카 크림</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="cha_details_4">
+                    <ul class="cha_left">
+                        <li>
+                            <img src="img/main_tw.png" alt="떼르말 워터 라인의 스킨 로션이 물 속에 있는 듯한 컨셉 사진">
+                            <p>Thermal Water</p>
+                            <h3>떼르말 워터</h3>
+                        </li>
+                        <li>
+                            <div class="product" id="product18">#97b5c5</div>
+                            <div class="cha_left_cha">
+                                <p>Thermal Water</p>
+                                <h3>모이스처라이징 크림</h3>
+                                <h4>#97b5c5</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product19">#c2e6ef</div>
+                            <div class="cha_left_cha">
+                                <p>Thermal Water</p>
+                                <h3>모이스처라이징 스킨</h3>
+                                <h4>#c2e6ef7</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product20">#7bbfcb</div>
+                            <div class="cha_left_cha">
+                                <p>Thermal Water</p>
+                                <h3>모이스처라이징 로션</h3>
+                                <h4>#7bbfcb</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cha_right">
+                        <h2>떼르말 워터</h2>
+                        <h3>미네랄, 온천수 70%로 수분 충전</h3>
+                        <p>스킨케어를 해도 계속 건조하다면 미네랄을 채우세요. 정말 갈증이 날 때는 물로도 부족하듯이 피부의 계속되는 건조함을 해소하기 위해선 보통 수준의 수분으로는 부족합니다. 이제는 미네랄 수분 충전이 필요한 단계입니다. 세계 3대 온천인 카를 황제 온천수 속의 미네랄을 가득 담았습니다. </p>
+                        <ul class="cha_right_product">
+                            <li>
+                                <div class="product_bt" id="product_bt18">
+                                    <img src="img/TW/tw_c1.png">
+                                </div>
+                                <p>모이스처라이징 크림</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt19">
+                                    <img src="img/TW/tw_c2.png">
+                                </div>
+                                <p>모이스처라이징 스킨</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt20">
+                                    <img src="img/TW/tw_c3.png">
+                                </div>
+                                <p>모이스처라이징 로션</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="cha_details_5">
+                    <ul class="cha_left">
+                        <li>
+                            <img src="img/main_bb.png" alt="비피다 바이옴 라인의 스킨을 건네받는 손의 사진">
+                            <p>Bifida Biome</p>
+                            <h3>비피다 바이옴</h3>
+                        </li>
+                        <li>
+                            <div class="product" id="product21">#e2790f</div>
+                            <div class="cha_left_cha">
+                                <p>Bifida Biome</p>
+                                <h3>앰플 토너</h3>
+                                <h4>#e2790f</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product22">#c9d7e5</div>
+                            <div class="cha_left_cha">
+                                <p>Bifida Biome</p>
+                                <h3>앰플 마스크</h3>
+                                <h4>#c9d7e5</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product23">#954402</div>
+                            <div class="cha_left_cha">
+                                <p>Bifida Biome</p>
+                                <h3>앰플 패드</h3>
+                                <h4>#954402</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product24">#734841</div>
+                            <div class="cha_left_cha">
+                                <p>Bifida Biome</p>
+                                <h3>콤플렉스 앰플</h3>
+                                <h4>#734841</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product" id="product25">#dbc6ad</div>
+                            <div class="cha_left_cha">
+                                <p>Bifida Biome</p>
+                                <h3>앰플 미스트</h3>
+                                <h4>#dbc6ad</h4>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cha_right">
+                        <h2>비피다 바이옴</h2>
+                        <h3>피부 기초체력 강화 솔루션</h3>
+                        <p>피부 근본 케어, 수분장벽 강화 솔루션이 담긴 마녀공장의 근본 성분 비피다 레시피! 스킨케어의 첫 단계를 책입집니다. 미세한 환경 변화에도 쉽게 반응하는 민감하고 건조한 피부라면 비피다 바이옴의 제품을 사용하세요. 외부 스트레스에도 튼튼한 피부 장벽을 위해, 매일매일 피부 케어를 시작하세요.</p>
+                        <ul class="cha_right_product">
+                            <li>
+                                <div class="product_bt" id="product_bt21">
+                                    <img src="img/BB/bb_c1.png">
+                                </div>
+                                <p>앰플 토너</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt22">
+                                    <img src="img/BB/bb_c2.png">
+                                </div>
+                                <p>앰플 마스크</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt23">
+                                    <img src="img/BB/bb_c3.png">
+                                </div>
+                                <p>앰플 패드</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt24">
+                                    <img src="img/BB/bb_c4.png">
+                                </div>
+                                <p>콤플렉스 앰플</p>
+                            </li>
+                            <li>
+                                <div class="product_bt" id="product_bt25">
+                                    <img src="img/BB/bb_c5.png">
+                                </div>
+                                <p>앰플 미스트</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+</div>
+</main>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function () {
+    const sections = $("main > div > section");
+    const pagingSpans = $("#pg_paging span");
+    const pageButtons = $(".pageButton");
+    let currentPage = 0;
+    const sectionHeight = sections.height();
+
+    function updatePageDisplay() {
+        pagingSpans.each(function (index) {
+            if (index === currentPage) {
+                $(this).addClass("onPage");
+            } else {
+                $(this).removeClass("onPage");
+            }
+        });
+    }
+
+    updatePageDisplay();
+
+    $("#pg_bt_up").click(function () {
+        if (currentPage > 0) {
+            currentPage--;
+            const marginTop = -currentPage * sectionHeight;
+            $("main > div").animate({ "margin-top": marginTop + "px" }, 500);
+            updatePageDisplay();
+        }
+    });
+
+    $("#pg_bt_down").click(function () {
+        if (currentPage < sections.length - 1) {
+            currentPage++;
+            const marginTop = -currentPage * sectionHeight;
+            $("main > div").animate({ "margin-top": marginTop + "px" }, 500);
+            updatePageDisplay();
+        }
+    });
+
+    // 메뉴 버튼 클릭 이벤트 처리
+    pageButtons.click(function () {
+        const targetPage = $(this).data("page");
+        const marginTop = -targetPage * sectionHeight;
+        $("main > div").animate({ "margin-top": marginTop + "px" }, 500);
+        currentPage = targetPage;
+        updatePageDisplay();
+    });
+});
+
+
+
+        //네비 호버 효과
+        $('header nav ul li').hover(
+            function() { 
+                $(this).children('.line').css('width', '60%');
+            }, 
+            function() { 
+                $(this).children('.line').css('width', '0%');
+            }
+        );
+
+        // class가 "bt_h4"인 모든 <h4> 요소에 대해 호버 이벤트를 추가합니다.
+        $("h4.bt_h4").hover(function(){
+          $(this).next("div.details").css("display", "block");
+        });
+        
+        $("div.details").hover(function(){
+           $(this).next("div.details").css("display", "block");
+        }, function(){
+            // 호버 종료 시, 해당 <div> 요소를 숨깁니다.
+            $(this).css("display", "none");
+        });
+
+
+        $("#fro_slide>ul").append($("#fro_slide>ul>li").eq(0).clone());
+        var li_width = $("#fro_slide>ul>li").outerWidth();
+        var s_num = 0;
+        var auto_play = true; // 자동 재생 여부
+
+        // 자동 재생
+        var auto_slide = setInterval(function() {
+            if (auto_play) {
+                s_num++;
+                $("#fro_slide_pg .onPageF").removeClass("onPageF");
+                $("#fro_slide_pg span").eq(s_num == $("#fro_slide>ul>li").length - 1 ? 0 : s_num).addClass("onPageF");
+                $("#fro_slide>ul").animate({
+                    marginLeft: -li_width * s_num
+                }, 1100, function() {
+                    if (s_num == $("#fro_slide>ul>li").length - 1) {
+                        $("#fro_slide>ul").css("margin-left", 0);
+                        s_num = 0;
+                    }
+                });
+            }
+        }, 5000);
+        
+        // 페이지네이션
+        var span = "";
+        for(var i=0; i<$("#fro_slide>ul>li").length-1; i++){
+            if(i==0) {
+                span += "<span class='onPageF'></span>";
+            } else {
+                span += "<span></span>";
+            }
+        }
+        $("#banner_pg").html(span);
+
+        // 재생/일시정지 토글 버튼 클릭 이벤트
+        $("#stop_play_btn").click(function() {
+            auto_play = !auto_play; // 자동 재생 상태를 토글
+            var btn_text = auto_play ? "STOP" : "PLAY"; // 버튼 텍스트를 변경
+            $(this).text(btn_text);
+            $("#stop_play_btn").toggleClass("onPB")
+        });
+
+
+        //슬라이드
+        var uni_spanTag = "";
+        $("#uni>#uni_content>article").each(function (index) {
+            if (index == 0) {
+                uni_spanTag += "<span class='onPageU'></span>";
+            } else {
+                uni_spanTag += "<span></span>";
+            }
+        });
+        $("#uni_pg").html(uni_spanTag);
+        function pagingweb(n) {
+            if (n >= $("#uni>#uni_content>article").length - 1) n = 0;
+            $("#uni_pg .onPageU").removeClass("onPageU");
+            $("#uni_pg span").eq(n).addClass("onPageU");
+        }
+
+        // 첫번째 복사
+        $("#uni>#uni_content").append($("#uni>#uni_content>article:first").clone());
+        // 가로 사이즈 조절
+        $("#uni>#uni_content>article").width($("#uni").width());
+
+        // 다음버튼
+        var uni_article_length = $("#uni>#uni_content>article").length;
+        var uni_slide_num = 0; // 슬라이드 번호
+        $("#uni_bt_next").click(function () {
+            var w = $("#uni").width();
+            uni_slide_num++;
+            $("#uni>#uni_content").stop(false, true).animate({ marginLeft: -w * uni_slide_num }, 700, function () {
+                if (uni_slide_num > uni_article_length - 2) {
+                    $("#uni>#uni_content").css("margin-left", 0);
+                    uni_slide_num = 0;
+                }
+            });
+            pagingweb(uni_slide_num);
+        })
+        // 이전버튼
+        $("#uni_bt_pre").click(function () {
+            var w = $("#uni").width();
+            uni_slide_num--;
+            if (uni_slide_num < 0) {
+                $("#uni>#uni_content").css("margin-left", -w * (uni_article_length - 1));
+                uni_slide_num = uni_article_length - 2;
+            }
+            $("#uni>#uni_content").stop(false, true).animate({ marginLeft: -w * uni_slide_num }, 700);
+            pagingweb(uni_slide_num);
+        })
+
+        
+        //.product 배경색 지정
+        for (var i = 1; i <= 25; i++) {
+            var divId = "product" + i;
+            var divClass = "product";
+            var text = $("#" + divId).text();
+            $("#" + divId).css("background-color", text);
+        }
+        //.product_bt 배경색 지정
+        for (var i = 1; i <= 20; i++) {
+            var divId = "product_bt" + i;
+            var divClass = "product_bt";
+            var text = $("#" + divId).text();
+            $("#" + divId).css("background-color", text);
+        }
+
+        //상품 사진 호버
+        $(".cha_right_product li div.product_bt").hover(
+            function() {
+                $(this).children().css("filter", "brightness(100%)");
+                $(this).siblings("p").css("filter", "opacity(100%)");
+                var btIndex = $(this).parent().index(); // 호버된 div의 부모 li의 인덱스 번호를 가져옵니다.
+                $(this).parent().parent().parent().parent().find(".cha_left li").eq(btIndex + 1).css("filter", "opacity(100%)"); // 인덱스 번호보다 1 큰 li의 display를 변경합니다.
+    
+            },
+            function() {
+                $(this).children().css("filter", "brightness(70%)");
+                $(this).siblings("p").css("filter", "opacity(0%)");
+                var btIndex = $(this).parent().index();
+                $(this).parent().parent().parent().parent().find(".cha_left li").eq(btIndex + 1).css("filter", "opacity(0%)");
+                $(".cha_left li:nth-child(1)").css("display", "block");
+            }
+        );
+
+
+        
+
+    </script>
+</body>
+</html>
